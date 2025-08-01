@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Senior Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Portfolio...</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">AJ</a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">Certification</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__background">
+                <div class="hero__parallax-layer" data-speed="0.5"></div>
+                <div class="hero__particles"></div>
+            </div>
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__greeting">Hello, I'm</span>
+                        <span class="hero__name">Alex Johnson</span>
+                        <span class="hero__title-role">Senior Full-Stack Developer</span>
+                    </h1>
+                    <p class="hero__tagline">Building modern web experiences with cutting-edge technologies</p>
+                    <div class="hero__location">📍 San Francisco, CA</div>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn--outline">View My Work</a>
+                    </div>
+                </div>
+                <div class="hero__scroll">
+                    <span class="hero__scroll-text">Scroll Down</span>
+                    <div class="hero__scroll-indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">Passionate full-stack developer with 8+ years of experience creating scalable web applications. Specialized in React, Node.js, and cloud architecture. Always eager to learn new technologies and solve complex problems.</p>
+                        <ul class="about__highlights">
+                            <li class="about__highlight">8+ years of full-stack development experience</li>
+                            <li class="about__highlight">Led development teams of 5-10 developers</li>
+                            <li class="about__highlight">Built applications serving 1M+ users</li>
+                            <li class="about__highlight">Expert in modern JavaScript frameworks</li>
+                            <li class="about__highlight">Cloud architecture and DevOps specialist</li>
+                        </ul>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <div class="stat__number" data-target="8">0</div>
+                            <div class="stat__label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number" data-target="50">0</div>
+                            <div class="stat__label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number" data-target="1000000">0</div>
+                            <div class="stat__label">Users Served</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number" data-target="15">0</div>
+                            <div class="stat__label">Team Members Led</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills & Technologies</h2>
+                <div class="skills__content">
+                    <div class="skills__categories">
+                        <button class="skills__category-btn active" data-category="all">All Skills</button>
+                        <button class="skills__category-btn" data-category="Programming">Programming</button>
+                        <button class="skills__category-btn" data-category="Frontend">Frontend</button>
+                        <button class="skills__category-btn" data-category="Backend">Backend</button>
+                        <button class="skills__category-btn" data-category="Cloud">Cloud</button>
+                        <button class="skills__category-btn" data-category="DevOps">DevOps</button>
+                    </div>
+                    <div class="skills__grid" id="skills-grid">
+                        <!-- Skills will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section__title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__date">2021 - Present</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Senior Full-Stack Developer</h3>
+                            <h4 class="timeline__company">TechCorp Solutions</h4>
+                            <p class="timeline__description">Lead development of enterprise-scale web applications serving over 500K users. Architect cloud-native solutions using AWS and implement CI/CD pipelines.</p>
+                            <ul class="timeline__achievements">
+                                <li>Reduced application load time by 40% through performance optimization</li>
+                                <li>Led migration from monolith to microservices architecture</li>
+                                <li>Mentored 5 junior developers and established coding standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">2019 - 2021</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Full-Stack Developer</h3>
+                            <h4 class="timeline__company">Digital Innovations Inc</h4>
+                            <p class="timeline__description">Developed and maintained multiple client projects using React, Node.js, and various databases. Collaborated with design teams to implement pixel-perfect UIs.</p>
+                            <ul class="timeline__achievements">
+                                <li>Built 12+ production applications from concept to deployment</li>
+                                <li>Implemented automated testing reducing bugs by 60%</li>
+                                <li>Optimized database queries improving response times by 30%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">2017 - 2019</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Frontend Developer</h3>
+                            <h4 class="timeline__company">StartupXYZ</h4>
+                            <p class="timeline__description">Created responsive web applications using modern JavaScript frameworks. Focused on user experience and performance optimization.</p>
+                            <ul class="timeline__achievements">
+                                <li>Developed company's first mobile-responsive platform</li>
+                                <li>Implemented real-time features using WebSocket technology</li>
+                                <li>Contributed to 300% increase in user engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- Certificates Section -->
+        <section class="certificates section" id="certificates">
+            <div class="container">
+                <h2 class="section__title">My Certificates</h2>
+                <div class="certificates__grid">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/BDU89ONJOSZJ" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">BDU89ONJOSZJ</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/IK9JSW7LG68R" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Specialization</div>
+                            <div class="certificate-card__id">IK9JSW7LG68R</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/3N1K9DCH4A90" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">3N1K9DCH4A90</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/OYQ2TK3P4KVL" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">OYQ2TK3P4KVL</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/FXCZZ5O9OFNW" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">FXCZZ5O9OFNW</div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1wGhZ1PNsqto7-dBHFHQLypt2Rmonr7aq/view" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">📄</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Google Drive Certificate</div>
+                            <div class="certificate-card__id">1wGhZ1PNsqto7-dBHFHQLypt2Rmonr7aq</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/GHPJVTOZMMRL" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">GHPJVTOZMMRL</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/R6PB8ZTOZ0QS" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">R6PB8ZTOZ0QS</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/H43VA430WC55" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">H43VA430WC55</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/AE8ZHHW74D5D" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">🎓</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Coursera Certificate</div>
+                            <div class="certificate-card__id">AE8ZHHW74D5D</div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1TIHtSW9X6ZXFUoKN_I4sWOB62_7ayCt-/view" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">📄</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Google Drive Certificate</div>
+                            <div class="certificate-card__id">1TIHtSW9X6ZXFUoKN_I4sWOB62_7ayCt-</div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1m3UVSF3RMeGO5GdB08-9QM6C1KNihqgg/view" class="certificate-card" target="_blank" rel="noopener">
+                        <div class="certificate-card__icon">📄</div>
+                        <div class="certificate-card__content">
+                            <div class="certificate-card__title">Google Drive Certificate</div>
+                            <div class="certificate-card__id">1m3UVSF3RMeGO5GdB08-9QM6C1KNihqgg</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Let's work together</h3>
+                        <p class="contact__description">I'm always interested in new opportunities and exciting projects. Whether you have a project in mind or just want to chat about technology, feel free to reach out!</p>
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <span class="contact__icon">📧</span>
+                                <span class="contact__text">alex.johnson@email.com</span>
+                            </div>
+                            <div class="contact__detail">
+                                <span class="contact__icon">📱</span>
+                                <span class="contact__text">+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact__detail">
+                                <span class="contact__icon">📍</span>
+                                <span class="contact__text">San Francisco, CA</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://linkedin.com/in/alexjohnson" class="contact__social-link" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/alexjohnson" class="contact__social-link" target="_blank">GitHub</a>
+                            <a href="https://alexjohnson.dev" class="contact__social-link" target="_blank">Website</a>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">© 2025 Alex Johnson. All rights reserved.</p>
+                <p class="footer__text">Built with ❤️ using modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+        <span class="scroll-to-top__icon">↑</span>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
